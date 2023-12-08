@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Enkel Webbshop</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <h1>Välkommen till vår Webbshop!</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Enkel Webbshop</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-    <h2>Våra produkter</h2>
-    <!-- filter knappar för produkt kategorier här -->
-    <!-- Visa era produkter innuti product-container -->
-    <div id="product-container"></div>
+<body>
+  <h1>Välkommen till vår Webbshop!</h1>
 
-    <h2>Din Varukorg</h2>
-    <!-- visa produkter som lagts till i kundvagnen och totalsumman innuti cart -->
-    <div id="cart"></div>
+  <h2>Våra produkter</h2>
+  <!-- filter knappar för produkt kategorier här -->
+  <!-- Visa era produkter innuti product-container -->
+  <div id="product-container">
+    <div class="products">
+      <img src="" alt="">
+      <div>
+        <h3>Title</h3>
+        <p>description</p>
+        <p>price</p>
+        <p>rating</p>
+        <div>
+          <button>amount</button>
+          <button>add</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- alert, eller sida som säger produkterna är på väg -->
-    <button id="checkout">Gå till kassan</button>
+  <h2>Din Varukorg</h2>
+  <!-- visa produkter som lagts till i kundvagnen och totalsumman innuti cart -->
+  <div id="cart"></div>
 
-    <script src="./js/main.js"></script>
-  </body>
+  <!-- alert, eller sida som säger produkterna är på väg -->
+  <button id="checkout">Gå till kassan</button>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/fetch.js"></script>
+</body>
+
 </html>
