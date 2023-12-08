@@ -5,3 +5,8 @@ const filtered = numbers.filter(function(number){
 });
 
 console.log(filtered);
+
+//1. en funktion för filter
+//2. när användaren klickar på filter ska olika de kategorierna synas -> eventListener
+//3. när användaren valt kategori filtreras kategorin och visas i webshoppen
+
