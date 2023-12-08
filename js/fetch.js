@@ -12,11 +12,12 @@ async function getAPI() {
             console.log('response code: ' + response.ok);
         }
     }
-    renderProducts();
+    renderProducts(products);
 }
 
-function renderProducts() {
+function renderProducts(products) {
     const productContioner = document.getElementById('product-container');
+    productContioner.innerHTML = '';
     products.forEach(product => {
         productContioner.innerHTML += `
         <div class="products">
