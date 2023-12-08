@@ -15,4 +15,4 @@ const sum = product.reduce((accumulator, currentValue) => {
 let shoppingCart = [];
 
 
-console.log(sum);
+// console.log(sum);
