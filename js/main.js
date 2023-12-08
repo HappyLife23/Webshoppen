@@ -6,7 +6,7 @@ Ni får också använda ett api som t.ex. https://fakestoreapi.com/ för att gen
 ut fiktiva produkter därifrån istället för från en lokal js/json.
 */
 
-const products = [
+const products1 = [
     { id: 1, name: 'T-shirt', category: 'kläder', price: 100 },
     { id: 2, name: 'Hörlurar', category: 'elektronik', price: 250 },
     { id: 3, name: 'Keps', category: 'kläder', price: 50 },
