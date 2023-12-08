@@ -26,9 +26,8 @@ function renderProducts(products) {
             <h3 class="product-title">${product.title}</h3>
             <p class="product-description">${product.description}</p>
             <p class="product-price">${product.price}</p>
-            <p class="product-rating">${product.rating}</p>
             <div>
-                <div>
+                <div class="add-btn">
                     <button>-</button>
                     <button class="product-amount-btn">0</button>
                     <button>+</button>

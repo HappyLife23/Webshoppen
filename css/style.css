@@ -136,7 +136,7 @@ nav .nav-links {
 
 /* Filter buttons*/
 
-.filter{
+.filter, #checkout{
   background-color: #fab005;
   padding: 15px 45px;
   font-size: 15px;
@@ -148,7 +148,30 @@ nav .nav-links {
 
 .product-header{
   font-size: 28px;
-  margin-left: 0.5rem;
+  margin: 1em 0 1em 0.5em;
+}
+
+.add-btn button{
+  background-color: #abb6ed;
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #222;
+  border-radius: 6px;
+  border: 0;
+  margin: 0.5em 0 1em 0.5em;
+}
+
+#product-container, .nav, .product-header, #checkout, .cart-header {
+  margin-left: 10rem;
+}
+
+#product-container {
+  border: 0;
+}
+
+.cart-header{
+  font-size: 28px;
+  margin-top: 1em;
 }
 
 

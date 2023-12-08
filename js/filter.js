@@ -22,3 +22,11 @@ const filterCategories = (filterBtn)=>{
         renderProducts(filteredProducts);
     };
 }
+
+const nav = document.querySelector('.nav');
+nav.addEventListener('click', (e) => {
+    all.style.backgroundColor = "#fab005";
+    mensClothing.style.backgroundColor = "#fab005";
+    jewelery.style.backgroundColor = "#fab005";
+    e.target.style.backgroundColor = "#9a6d03";
+});
