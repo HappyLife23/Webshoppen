@@ -1,18 +1,28 @@
-const product = [
-    { id: 1, name: 'T-shirt', category: 'kläder', price: 100 },
-    { id: 2, name: 'Hörlurar', category: 'elektronik', price: 250 },
-    { id: 3, name: 'Keps', category: 'kläder', price: 50 },
-    { id: 4, name: 'Mobiltelefon', category: 'elektronik', price: 500 }
-]; 
-// ta bort detta när jag är klar, finns redan..
+let cart = [];
 
-const initialValue = 0;
+function addProduct() {
+    const titles = document.querySelectorAll('.product-title');
+    const prices = document.querySelectorAll('.product-price');
+    const amounts = document.querySelectorAll('.product-amount');
+    const addBtns = document.querySelectorAll('.product-add-btn');
+    const addBtnsArray = Object.values(addBtns);
 
-const sum = product.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue.price;
-}, 0);
+    addBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const index = addBtnsArray.indexOf(e.target);
+            const amount = amounts[index].value;
+            const price = prices[index].value;
+            const title = titles[index].value;
+            addToCart(amount, price, title);
+        })
+    });
+}
 
-let shoppingCart = [];
-
-
-// console.log(sum);
+function addToCart(amount, price, title) {
+    const choisedProduct = {
+        "title": title, 
+        "price": price,
+        "amount": amount
+    }
+    cart.push(choisedProduct);
+}
