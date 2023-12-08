@@ -16,6 +16,26 @@ async function getAPI() {
 }
 
 function renderProducts() {
-    console.log(products[0]);
-    
+    const productContioner = document.getElementById('product-container');
+    products.forEach(product => {
+        productContioner.innerHTML += `
+        <div class="products">
+        <img class="product-img" src="${product.image}" alt="${product.category}">
+        <div>
+            <h3 class="product-title">${product.title}</h3>
+            <p class="product-description">${product.description}</p>
+            <p class="product-description">${product.price}</p>
+            <p class="product-rating">${product.rating}</p>
+            <div>
+                <div>
+                    <button>-</button>
+                    <button class="product-amount-btn">0</button>
+                    <button>+</button>
+                </div>
+                <button class="product-add-btn">add</button>
+            </div>
+        </div>
+    </div>
+    `
+    });
 }
