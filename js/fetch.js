@@ -38,4 +38,5 @@ function renderProducts(products) {
     </div>
     `
     });
+    addProduct();
 }
