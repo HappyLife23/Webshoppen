@@ -2,23 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Enkel Webbshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartStylez</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <div class="background"></div>
-    <h1>Välkommen till vår Webbshop!</h1>
-
-    <h2>Våra produkter</h2>
+    <div class="main-background">
+      <header>
+        <nav>
+          <a href="#" class="logo">SmartStylez</a>
+          <div class="nav-item">
+            <a href="" class="nav-links">Home</a>
+            <a href="" class="nav-links">Products</a>
+            <a href="" class="nav-links contact">Contact Us</a>
+          </div>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1 class="primary-heading">your everyday stylez</h1>
+          <a href="#" class="primary-btn">Start Here</a>
+        </div>
+      </section>
+    </div>
+    <h2>Our Products</h2>
     <!-- filter knappar för produkt kategorier här -->
-    <nav>
-      <button class="all-btn" value="all">All</button>
-      <button class="mens-clothing-btn" value="mens clothing">Mens clothing</button>
-      <button class="jewelery-btn" value="jewelery">Jewelery</button>
-    </nav>
     <!-- Visa era produkter innuti product-container -->
-    <div id="product-container"></div>
+    <div id="product-container">
+      <div class="products">
+        <img class="product-img" src="" alt="" />
+        <div>
+          <h3 class="product-title">Title</h3>
+          <p class="product-description">description</p>
+          <p class="product-description">price</p>
+          <p class="product-rating">rating</p>
+          <div>
+            <div>
+              <button>-</button>
+              <button class="product-amount-btn">amount</button>
+              <button>+</button>
+            </div>
+            <button class="product-add-btn">add</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <h2>Din Varukorg</h2>
     <!-- visa produkter som lagts till i kundvagnen och totalsumman innuti cart -->
@@ -28,8 +57,6 @@
     <button id="checkout">Gå till kassan</button>
 
     <script src="./js/main.js"></script>
-    <script src="./js/filter.js"></script>
     <script src="./js/fetch.js"></script>
-    <script src="./js/reduce.js"></script>
-</body>
+  </body>
 </html>
