@@ -24,7 +24,6 @@ jewelery.addEventListener('click', (e) => {
 
 const filterCategories = (filterBtn)=>{
     const filteredProducts = items.filter((product) => {
-        console.log(product.category);
         return product.category === filterBtn;
     });
 }
