@@ -85,3 +85,51 @@ nav .nav-links {
   justify-content: center;
   align-items: center;
 }
+
+.product-title {
+  font-size: 24px;
+  color: #2f4858;
+  margin-bottom: 20px;
+}
+.product-description {
+  color: #2f4858;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.product-price {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2f4858;
+  margin-bottom: 30px;
+}
+.quantity-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.quantity-section button {
+  border: none;
+}
+.quantity-section button:first-child {
+  width: 30px;
+  background-color: #364fc7;
+  color: #fff;
+}
+.quantity-section button:last-child {
+  width: 30px;
+  background-color: #364fc7;
+  color: #fff;
+}
+
+.product-add-btn {
+  border: none;
+  background-color: #364fc7;
+  padding: 10px 52px;
+  font-size: 20px;
+  border-radius: 6px;
+  color: #fafafa;
+  text-transform: capitalize;
+}
