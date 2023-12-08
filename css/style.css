@@ -133,3 +133,22 @@ nav .nav-links {
   color: #fafafa;
   text-transform: capitalize;
 }
+
+/* Filter buttons*/
+
+.filter{
+  background-color: #fab005;
+  padding: 15px 45px;
+  font-size: 15px;
+  color: #222;
+  border-radius: 6px;
+  border: 0;
+  margin: 0.5em 0 1em 0.5em;
+}
+
+.product-header{
+  font-size: 28px;
+  margin-left: 0.5rem;
+}
+
+
