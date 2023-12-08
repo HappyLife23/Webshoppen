@@ -1,12 +1,31 @@
-const numbers = [1, 2, 3, 4, 5];
+let items = [
+    { id: 1, name: 'T-shirt', category: 'kläder', price: 100 },
+    { id: 2, name: 'Hörlurar', category: 'elektronik', price: 250 },
+    { id: 3, name: 'Keps', category: 'kläder', price: 50 },
+    { id: 4, name: 'Mobiltelefon', category: 'elektronik', price: 500 }
+];
 
-const filtered = numbers.filter(function(number){
-    return number > 2;
+const all = document.querySelector('.all-btn');
+const mensClothing = document.querySelector('.mens-clothing-btn');
+const jewelery = document.querySelector('.jewelery-btn');
+
+all.addEventListener('click', (e) => {
+    filterCategories();
+    console.log(e.target.value);
+});
+mensClothing.addEventListener('click', (e) => {
+    filterCategories();
+    console.log(e.target.value);
+});
+jewelery.addEventListener('click', (e) => {
+    filterCategories();
+    console.log(e.target.value);
 });
 
-console.log(filtered);
-
-//1. en funktion för filter
-//2. när användaren klickar på filter ska olika de kategorierna synas -> eventListener
-//3. när användaren valt kategori filtreras kategorin och visas i webshoppen
+const filterCategories = (filterBtn)=>{
+    const filteredProducts = items.filter((product) => {
+        console.log(product.category);
+        return product.category === filterBtn;
+    });
+}
 
