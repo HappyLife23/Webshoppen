@@ -12,11 +12,12 @@ async function getAPI() {
             console.log('response code: ' + response.ok);
         }
     }
-    renderProducts();
+    renderProducts(products);
 }
 
-function renderProducts() {
+function renderProducts(products) {
     const productContioner = document.getElementById('product-container');
+    productContioner.innerHTML = '';
     products.forEach(product => {
         productContioner.innerHTML += `
         <div class="products">
@@ -24,10 +25,9 @@ function renderProducts() {
         <div>
             <h3 class="product-title">${product.title}</h3>
             <p class="product-description">${product.description}</p>
-            <p class="product-description">${product.price}</p>
-            <p class="product-rating">${product.rating}</p>
+            <p class="product-price">${product.price}</p>
             <div>
-                <div>
+                <div class="add-btn">
                     <button>-</button>
                     <button class="product-amount-btn">0</button>
                     <button>+</button>
@@ -38,4 +38,5 @@ function renderProducts() {
     </div>
     `
     });
+    addProduct();
 }

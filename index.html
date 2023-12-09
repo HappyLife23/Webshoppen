@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <title>Enkel Webbshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartStylez</title>
     <link rel="stylesheet" href="./css/style.css" />
-</head>
+  </head>
 
-<body>
-    <div class="background"></div>
-<<<<<<< HEAD
 
-=======
->>>>>>> main
     <h1>Välkommen till vår Webbshop!</h1>
     <h2>Våra produkter</h2>
     <!-- filter knappar för produkt kategorier här -->
@@ -34,10 +29,38 @@
                     <button class="product-add-btn">add</button>
                 </div>
             </div>
-        </div>
-    </div>
+=======
+  <body>
+    <div class="main-background">
+      <header>
+        <nav>
+          <a href="#" class="logo">SmartStylez</a>
+          <div class="nav-item">
+            <a href="" class="nav-links">Home</a>
+            <a href="" class="nav-links">Products</a>
+            <a href="" class="nav-links contact">Contact Us</a>
+          </div>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1 class="primary-heading">your everyday stylez</h1>
+          <a href="#" class="primary-btn">Start Here</a>
 
-    <h2>Din Varukorg</h2>
+        </div>
+      </section>
+    </div>
+    <h2 class="product-header">Our Products</h2>
+    <!-- filter knappar för produkt kategorier här -->
+    <nav class="nav">
+      <button class="filter all-btn">All</button>
+      <button class="filter mens-clothing-btn">Men's clothing</button>
+      <button class="filter jewelery-btn">Jewelery</button>
+    </nav>
+    <!-- Visa era produkter innuti product-container -->
+    <div id="product-container"></div>
+
+    <h2 class="cart-header">Din Varukorg</h2>
     <!-- visa produkter som lagts till i kundvagnen och totalsumman innuti cart -->
     <div id="cart"></div>
 
@@ -46,6 +69,8 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/fetch.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/reduce.js"></script>
 </body>
 
 </html>
