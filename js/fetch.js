@@ -15,13 +15,14 @@ async function getAPI() {
     renderProducts(products);
 }
 
+
 function renderProducts(products) {
     const productContioner = document.getElementById('product-container');
     productContioner.innerHTML = '';
     products.forEach(product => {
         productContioner.innerHTML += `
         <div class="products">
-        <img class="product-img" src="${product.image}" alt="${product.category}">
+            <img class="product-img" src="${product.image}" alt="${product.category}">
         <div>
             <h3 class="product-title">${product.title}</h3>
             <p class="product-description">${product.description}</p>
@@ -37,6 +38,6 @@ function renderProducts(products) {
         </div>
     </div>
     `
-    });
+});
     addProduct();
 }
